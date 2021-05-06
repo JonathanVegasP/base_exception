@@ -1,7 +1,4 @@
-A library for Dart developers.
-
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+A Base Exception that display the name of the class and the error message into the console
 
 ## Usage
 
@@ -10,8 +7,12 @@ A simple usage example:
 ```dart
 import 'package:base_exception/base_exception.dart';
 
-main() {
-  var awesome = new Awesome();
+class AnException extends BaseException {
+  const AnException() : super('Error...');
+}
+
+void onThrowException() {
+  throw const AnException();
 }
 ```
 
