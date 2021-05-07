@@ -8,7 +8,7 @@ A simple usage example:
 import 'package:base_exception/base_exception.dart';
 
 class AnException extends BaseException {
-  const AnException() : super('Error...');
+  const AnEwxception() : super('Error...');
 }
 
 void onThrowException() {
